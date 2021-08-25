@@ -2,6 +2,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import React, { Component } from "react";
 import Expenses from "./components/Expenses.jsx";
+import NewEXpense from "./newExpense/NewExpense";
 function App() {
   const expenses = [
     {
@@ -31,7 +32,7 @@ function App() {
   ];
   return (
     <div>
-      <h1>Expense App</h1>
+      <NewEXpense />
       {/* <ExpenseItem
         title={expenses[0].title}
         amount={expenses[0].amount}
